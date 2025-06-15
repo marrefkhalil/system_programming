@@ -1,0 +1,17 @@
+0x5655a1a0 = l'adresse du pointer pointer 
+0xffffcf1e = addresse de la valeuyr str1 
+
+
+Int *p  
+
+Struct test* test  Quand on déclare un pointeur sans l'initialiser il va avoir une  valeur comme addresse de n'importe ou comme elle peu etre 
+une adresse du segment data et ceci est très dangereaux et il va causer segment default,  
+
+ 
+
+Int *p => le p contient une addresse inconnu qui n'est pa utilisable donc si on fait *p =5 le le 5 il va ecraser le contenu 
+de cette adresse qui peu uetre un code ou une données quelque part dans la mémoire, cela va causé une segmentation default.  
+
+ 
+
+Les  

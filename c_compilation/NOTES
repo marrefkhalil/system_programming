@@ -1,0 +1,23 @@
+# There some conditions liuke #ifdef, we can choose the code to compile if the condition is true 
+cpp program.c  ity gives program.i  => Like this we compile the preprocsing 
+              in the file with .i extention will import all codes in file that we included 
+CPP will give the value Defined with # in the Variabhle 
+CPP pass and read our code multiple time           
+
+
+cc -S comp.i -> Generate a Assambly program
+GNU Assembly = Assambly => sourceware.org/binutils/docs/as/ => Link where all AS assembly language key words are defiened
+ 
+
+ ------------------
+ Readelf -r file =>  Rocatable, see the symbols (functions ), the offset of where are the symbols  
+(To read more about the readelf and binutils ) 
+ ------------------
+ objdump -D -Mintel program.o => disamble the Object File 
+
+------------------------------------------------------
+ld -o Program program.o add.o sub.o => this command will combine all the objectfile in one executable file 
+the probleme the file wont know what  is the entry function so we add -e main and will add the main as the entry function 
+
+
+ld -e main -o program.o add.o sub.o
