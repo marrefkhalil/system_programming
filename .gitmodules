@@ -1,0 +1,3 @@
+[submodule "kernel_code"]
+	path = kernel_code
+	url = https://github.com/marrefkhalil/kernel_code.git
